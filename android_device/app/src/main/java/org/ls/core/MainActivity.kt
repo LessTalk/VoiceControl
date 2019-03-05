@@ -45,13 +45,41 @@ class MainActivity : AppCompatActivity() {
         }
 
         btn_auth.setOnClickListener {
-            //type = 0 (auth)
+            //type = 0 授权
             mXClient.send("{\n" +
                     "\t\"type\": \"0\",\n" +
                     "\t\"key\": \"fcd338605d90fe21\"\n" +
                     "}")
         }
 
+        btn_wake.setOnClickListener {
+            //type = 1 唤起
+            mXClient.send("{\n" +
+                    "\t\"type\": 1\n" +
+                    "}")
+        }
 
+        btn_volume.setOnClickListener {
+            //type = 2 录入音量
+            mXClient.send("{\n" +
+                    "\t\"type\": 2,\n" +
+                    "\t\"result\": 10\n" +
+                    "}")
+        }
+
+        btn_deal.setOnClickListener {
+            //type = 3 录音结束请求ASR
+            mXClient.send("{\n" +
+                    "\t\"type\": 3\n" +
+                    "}")
+        }
+
+        btn_asr.setOnClickListener {
+            //type = 3 录音结束请求ASR
+            mXClient.send("{\n" +
+                    "\t\"type\": 4,\n" +
+                    "\t\"result\": \"刘德华的电影\"\n" +
+                    "}")
+        }
     }
 }

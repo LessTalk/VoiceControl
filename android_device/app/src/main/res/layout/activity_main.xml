@@ -28,31 +28,31 @@
         android:text="向大耳朵请求授权"
         />
 
-    <!--<Button-->
-        <!--android:id="@+id/btn_wake"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="唤起设备"-->
-        <!--/>-->
+    <Button
+        android:id="@+id/btn_wake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="唤起设备"
+        />
 
-    <!--<Button-->
-        <!--android:id="@+id/btn_volume"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="录入音量(0-25)"-->
-        <!--/>-->
+    <Button
+        android:id="@+id/btn_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录入音量(0-25)"
+        />
 
-    <!--<Button-->
-        <!--android:id="@+id/btn_deal"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="录音结束,请求ASR结果"-->
-        <!--/>-->
+    <Button
+        android:id="@+id/btn_deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录音结束,请求ASR结果"
+        />
 
-    <!--<Button-->
-        <!--android:id="@+id/btn_asr"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="得到ASR结果"-->
-        <!--/>-->
+    <Button
+        android:id="@+id/btn_asr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="得到ASR结果"
+        />
 </LinearLayout>
