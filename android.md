@@ -84,7 +84,7 @@ XClientManager.send(mXClient,2,10)
 
 • 录音结束请求文字结果<br>
 
-| 类型Type        |            |
+| 类型Type        |            
 | ------------- |:-------------:| 
 | 3     |  |
   
