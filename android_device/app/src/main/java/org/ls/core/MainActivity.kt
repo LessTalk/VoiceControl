@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import org.ls.android_device.XClient
+import org.ls.core.socket.XClientManager
 import org.ls.ssdpclient.OnScanListener
 import org.ls.ssdpclient.SSDPManager
 import java.net.InetAddress
@@ -26,16 +27,9 @@ class MainActivity : AppCompatActivity() {
                     Log.e("Less","找到大耳朵设备:$msg")
                     val ip = address.toString().replace("/","")
                     runOnUiThread {
-                        Toast.makeText(this@MainActivity,"搜索到大耳朵设备IP:$ip",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@MainActivity,"搜索到大耳朵设备IP:$ip", Toast.LENGTH_SHORT).show()
                     }
-                    try{
-                        mXClient = XClient(URI("ws://$ip:7777"))
-                        mXClient.connect()
-                    }catch (t : Throwable){
-                        runOnUiThread {
-                            Toast.makeText(this@MainActivity,"连接失败:${t.message}",Toast.LENGTH_SHORT).show()
-                        }
-                    }
+                    XClientManager.connect(ip)
                 }
             }
         })
@@ -46,40 +40,27 @@ class MainActivity : AppCompatActivity() {
 
         btn_auth.setOnClickListener {
             //type = 0 授权
-            mXClient.send("{\n" +
-                    "\t\"type\": \"0\",\n" +
-                    "\t\"key\": \"fcd338605d90fe21\"\n" +
-                    "}")
+            XClientManager.send(mXClient,0,"联系商务")
         }
 
         btn_wake.setOnClickListener {
             //type = 1 唤起
-            mXClient.send("{\n" +
-                    "\t\"type\": 1\n" +
-                    "}")
+            XClientManager.send(mXClient,1)
         }
 
         btn_volume.setOnClickListener {
             //type = 2 录入音量
-            mXClient.send("{\n" +
-                    "\t\"type\": 2,\n" +
-                    "\t\"result\": 10\n" +
-                    "}")
+            XClientManager.send(mXClient,2,10)
         }
 
         btn_deal.setOnClickListener {
             //type = 3 录音结束请求ASR
-            mXClient.send("{\n" +
-                    "\t\"type\": 3\n" +
-                    "}")
+            XClientManager.send(mXClient,3)
         }
 
         btn_asr.setOnClickListener {
             //type = 3 录音结束请求ASR
-            mXClient.send("{\n" +
-                    "\t\"type\": 4,\n" +
-                    "\t\"result\": \"刘德华的电影\"\n" +
-                    "}")
+            XClientManager.send(mXClient,4,"","推荐好看的电影")
         }
     }
 }
