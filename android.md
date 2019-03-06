@@ -52,8 +52,9 @@ SSDPManager.setScanDeviceListener(object : OnScanListener{
 
 • 鉴权<br>
 
-   1 type = 0<br>
-   2 联系方式:yulingyan@bftv.com
+| 类型        | 描述           | 
+| ------------- |:-------------:| 
+| type = 0     | 联系方式:yulingyan@bftv.com | 
 
 ```java
 XClientManager.send(mXClient,0,"联系商务")
