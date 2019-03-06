@@ -10,7 +10,6 @@ import org.ls.core.socket.XClientManager
 import org.ls.ssdpclient.OnScanListener
 import org.ls.ssdpclient.SSDPManager
 import java.net.InetAddress
-import java.net.URI
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                     runOnUiThread {
                         Toast.makeText(this@MainActivity,"搜索到大耳朵设备IP:$ip", Toast.LENGTH_SHORT).show()
                     }
-                    XClientManager.connect(ip)
+                    mXClient = XClientManager.connect(ip)!!
                 }
             }
         })
