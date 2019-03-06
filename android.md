@@ -52,19 +52,19 @@ SSDPManager.setScanDeviceListener(object : OnScanListener{
 
 • 鉴权<br>
 
-type = 0<br>
-联系方式:yulingyan@bftv.com
+   1 type = 0<br>
+   2 联系方式:yulingyan@bftv.com
 
 ```java
 XClientManager.send(mXClient,0,"联系商务")
 ```
 
 
-• 唤起
-
+• 唤起<br>
+    
+    1 type = 1(非必须操作)<br>
+    2 移动端设备 喊了唤醒词 例如 小米音响 "小爱小爱" 这个时候可以通过如下方法 通知电视端 进行响应的动画显示
 ```java
-type = 1(非必须操作)<br>
-移动端设备 喊了唤醒词 例如 小米音响 "小爱小爱" 这个时候可以通过如下方法 通知电视端 进行响应的动画显示
 XClientManager.send(mXClient,1)
 ```
 
