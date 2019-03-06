@@ -71,3 +71,33 @@ XClientManager.send(mXClient,0,"联系商务")
 XClientManager.send(mXClient,1)
 ```
 
+• 录音音量<br>
+
+| 类型Type        | 描述           | 
+| ------------- |:-------------:| 
+| 2     | 当前设备收集到的音量阀值传给大耳朵 大耳朵内部最低值为 1 最高值为25 可以进行响应比例的换算 | 
+  
+```java
+XClientManager.send(mXClient,2,10)
+```
+
+
+• 录音结束请求文字结果<br>
+
+| 类型Type        | 
+| ------------- |:
+| 3     |
+  
+```java
+XClientManager.send(mXClient,3)
+```
+
+• 语音转文字结果<br>
+
+| 类型Type        | 
+| ------------- |:
+| 4     | 
+  
+```java
+XClientManager.send(mXClient,4,"","推荐好看的电影")
+```
