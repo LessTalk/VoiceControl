@@ -1,4 +1,22 @@
-## 安卓
+## Android
+
+### 工具
+
+* 目前仅支持Android Studio
+
+### 引用
+
+* root.build.gradle
+
+```java
+       maven {
+            url "http://123.126.114.194:8083/repository/maven-3rd/"
+            credentials {
+                username 'xxxx'
+                password 'xxxx'
+            }
+        }
+ ```
 
 #### 寻址
 ```java
