@@ -51,10 +51,10 @@ SSDPManager.setScanDeviceListener(object : OnScanListener{
 ### 通信
 
 • 鉴权
-type = 0
+type = 0<br>
+联系方式:yulingyan@bftv.com
 ```java
 XClientManager.send(mXClient,0,"联系商务")
-联系方式:yulingyan@bftv.com
 ```
 
 
