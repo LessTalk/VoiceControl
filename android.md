@@ -18,6 +18,12 @@
         }
  ```
 
+* moudle.build.gradle
+```java
+implementation "com.bftv.fui:android_device:1.0.3"
+```
+
+
 #### 寻址
 ```java
 SSDPManager.start()
