@@ -7,6 +7,6 @@
 ![Alt text](架构.png)
 
 
-#### [安卓系统接入](android.md)
+#### [安卓接入](android.md)
 
-#### [苹果系统接入](ios.md)
+#### [苹果接入](ios.md)
