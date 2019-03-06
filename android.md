@@ -84,9 +84,9 @@ XClientManager.send(mXClient,2,10)
 
 • 录音结束请求文字结果<br>
 
-| 类型Type        |            | 
+| 类型Type        |            
 | ------------- |:-------------:| 
-| 3     | 当前设备收集到的音量阀值传给大耳朵 大耳朵内部最低值为 1 最高值为25 可以进行响应比例的换算 | 
+| 3     |  
   
 ```java
 XClientManager.send(mXClient,3)
