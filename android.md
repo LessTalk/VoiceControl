@@ -84,9 +84,9 @@ XClientManager.send(mXClient,2,10)
 
 • 录音结束请求文字结果<br>
 
-| 类型Type        |            |
+| 类型Type        |      是否必须      |
 | ------------- |:-------------:| 
-| 3     |  
+| 3     |  否|
   
 ```java
 XClientManager.send(mXClient,3)
@@ -94,9 +94,9 @@ XClientManager.send(mXClient,3)
 
 • 语音转文字结果<br>
 
-| 类型Type        | 
+| 类型Type        |      是否必须      |
 | ------------- |:-------------:| 
-| 4     | 
+| 4     |  是|
   
 ```java
 XClientManager.send(mXClient,4,"","推荐好看的电影")
