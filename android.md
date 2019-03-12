@@ -23,6 +23,15 @@
 implementation "com.bftv.fui:android_device:1.0.3"
 ```
 
+* 在AndroidManifest.xml中添加权限
+```java
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    ```
 
 ### DLNA连接
 
