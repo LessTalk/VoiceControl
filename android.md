@@ -31,7 +31,7 @@ implementation "com.bftv.fui:android_device:1.0.3"
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    ```
+```
 
 ### DLNA连接
 
