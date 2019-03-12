@@ -16,7 +16,7 @@
                 password 'xxxx'
             }
         }
- ```
+```
 
 * moudle.build.gradle
 ```java
