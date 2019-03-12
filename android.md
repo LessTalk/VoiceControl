@@ -41,6 +41,7 @@ SSDPManager.start()
 ```
 
 * 连接
+
 ```java
 SSDPManager.setScanDeviceListener(object : OnScanListener{
             override fun findDevice(address: InetAddress, msg: String) {
@@ -55,6 +56,7 @@ SSDPManager.setScanDeviceListener(object : OnScanListener{
                 }
             }
 })
+
 ```
 
 ### 通信
