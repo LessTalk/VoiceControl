@@ -12,8 +12,8 @@
        maven {
             url "http://123.126.114.194:8083/repository/maven-3rd/"
             credentials {
-                username 'xxxx'
-                password 'xxxx'
+                username 'guest'
+                password 'guest'
             }
         }
 ```
